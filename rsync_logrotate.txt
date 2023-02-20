@@ -1,0 +1,9 @@
+#/etc/logrotate.d/rsyncd
+
+/var/log/rsync_backup.log {
+size=10240k
+compress
+rotate 4
+missingok
+notifempty
+}
